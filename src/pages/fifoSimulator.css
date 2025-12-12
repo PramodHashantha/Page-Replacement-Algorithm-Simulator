@@ -2,16 +2,16 @@
 .simulator-container {
     max-width: 1000px;
     margin: 30px auto;
-    padding: 30px; /* Increased padding */
+    padding: 30px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: none; /* Removed border */
-    border-radius: 12px; /* Increased roundness */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow */
-    background-color: #f7f9fc; /* Light background for contrast */
+    border: none; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    background-color: #f7f9fc; 
 }
 
 h1 {
-    color: #1c2e4a; /* Deep blue/grey */
+    color: #1c2e4a; 
     text-align: center;
     margin-bottom: 5px;
 }
@@ -31,7 +31,7 @@ hr {
 .input-panel {
     display: flex;
     gap: 25px;
-    align-items: flex-end; /* Align items at the bottom */
+    align-items: flex-end; 
     margin-bottom: 20px;
     flex-wrap: wrap;
     padding: 15px;
@@ -76,7 +76,7 @@ hr {
 
 /* Simulate Button */
 .input-panel button:not(.reset-button) {
-    background-color: #2ecc71; /* Emerald Green */
+    background-color: #2ecc71; 
     color: white;
 }
 .input-panel button:not(.reset-button):hover:not(:disabled) {
@@ -86,7 +86,7 @@ hr {
 
 /* Reset Button */
 .input-panel button.reset-button {
-    background-color: #95a5a6; /* Silver/Grey */
+    background-color: #95a5a6; 
     color: white;
 }
 .input-panel button.reset-button:hover:not(:disabled) {
@@ -127,7 +127,7 @@ button:disabled {
 /* Error Message Styling */
 .error-message {
     color: #c0392b;
-    background-color: #fbe6e6; /* Lighter background */
+    background-color: #fbe6e6;
     padding: 12px;
     border-radius: 5px;
     font-weight: bold;
@@ -140,14 +140,14 @@ button:disabled {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Stronger shadow for the table */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
     border-radius: 8px;
-    overflow: hidden; /* Ensures rounded corners clip the border */
+    overflow: hidden; 
 }
 
 .simulation-grid th, .simulation-grid td {
-    border: 1px solid #e9ecef; /* Lighter grid lines */
-    padding: 14px 10px; /* More vertical padding */
+    border: 1px solid #e9ecef;
+    padding: 14px 10px;
     text-align: center;
     font-size: 14px;
     min-width: 55px;
@@ -156,14 +156,14 @@ button:disabled {
 }
 
 .simulation-grid th {
-    background-color: #e9f2f9; /* Light blue header */
+    background-color: #e9f2f9; 
     color: #1c2e4a;
     font-weight: 700;
 }
 
 /* Highlighting the Current Step Column (General Column Highlight) */
 .simulation-grid .current-step {
-    background-color: #dbeaff !important; /* Slightly more vibrant blue highlight */
+    background-color: #dbeaff !important; 
     border-color: #3498db !important;
 }
 
@@ -190,32 +190,32 @@ button:disabled {
     z-index: 10;
 }
 
-/* --- ENHANCED VISUAL FEEDBACK (FIXED WITH !important) --- */
+
 
 /* 1. HIT */
 .frame-cell.hit-cell {
-    background-color: #e6ffe6 !important; /* Very light green */
-    border: 3px solid #2ecc71 !important; /* Strong green border */
-    transform: scale(1.05); /* Subtle zoom effect */
+    background-color: #e6ffe6 !important; 
+    border: 3px solid #2ecc71 !important; 
+    transform: scale(1.05); 
 }
 
 /* 2. FAULT (Load into FREE Frame) */
 .frame-cell.loaded-free {
-    background-color: #fff8e1 !important; /* Light yellow */
-    border: 3px solid #ff9800 !important; /* Orange border */
+    background-color: #fff8e1 !important; 
+    border: 3px solid #ff9800 !important; 
 }
 
 /* 3. FAULT & REPLACE (Newly loaded page) */
 .frame-cell.loaded-replace {
-    background-color: #ffedef !important; /* Light pink */
-    border: 3px solid #e91e63 !important; /* Pink/Red border */
+    background-color: #ffedef !important; 
+    border: 3px solid #e91e63 !important; 
 }
 
 /* 3. FAULT & REPLACE (The VICTIM frame) */
 .frame-cell.replaced-cell {
     background-color: #fce4ec !important; 
     color: #c2185b;
-    border: 3px solid #c0392b !important; /* Strong red border */
+    border: 3px solid #c0392b !important; 
     text-decoration: line-through 2px; 
     opacity: 0.8;
 }
