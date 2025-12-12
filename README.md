@@ -60,7 +60,7 @@ Builds the app for production to the `build` folder. This optimized version is r
 The complete code, detailed report, and a live demonstration of the simulator are available here:
 
 * **Live Application URL:** **https://page-replacement-algorithm-simulato-red.vercel.app/**
-* **Full Report (PDF):** [Link to your final PDF report in the repository]
+* **Full Report (PDF):** 
 
 ---
 
